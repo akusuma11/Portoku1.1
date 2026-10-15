@@ -3,51 +3,54 @@ import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import saraninVideo from "@/assets/img/portfolio/saranin.mp4";
+import eviasiImage from "../assets/img/portfolio/eviasi.png";
+import plantifyImage from "../assets/img/portfolio/plantify.png";
+import unieventImage from "../assets/img/portfolio/unievent.png";
 
 const projects = [
   {
-  title: "Plantify – Smart Plant Monitoring & Automatic Watering",
-  description:
-    "A smart plant monitoring mobile application with IoT integration for monitoring soil and environmental conditions, managing automatic watering schedules, and tracking plant growth through real-time sensor data.",
-  src: "plantify.png",
-  link: "/src/assets/img/portfolio/plantify.png",
-  color: "#8FA66A",
-  githubLink: "https://github.com/akusuma11/plantify-mobile",
-  liveLink: ""
-
-  },
- {
-  title: "UniEvent – Event Management System",
-  description:
-    "An event management platform designed to simplify event discovery, ticket reservations, and participant data management across Indonesia, with a focus on events hosted at hotels and premium venues. UniEvent provides an intuitive interface for exploring events, booking tickets, and managing event operations.",
-  src: "unievent.png",
-  link: "/src/assets/img/portfolio/unievent.png",
-  color: "#8C44E4",
-  githubLink: "https://github.com/akusuma11/unievent",
-  liveLink: ""
-},
- 
-{
-  title: "Saranin.id – AI Product Recommendation",
-  description:
-    "An AI-powered product recommendation system for supermarkets that delivers personalized suggestions based on shopping data. The platform enhances customer shopping experiences, saves time, and helps retailers understand shopping patterns through machine learning and an integrated web application.",
-  src: "saraninVideo",
-  link: "/src/assets/img/portfolio/saranin.mp4",
-  color: "#FFE58A",
-  githubLink: "https://github.com/KlikSaran",
-  liveLink: "",
-  type: "video",
-},
-
-  {
-    title: "Eviasi - Car Detailing & Modification Booking App",
+    title: "Plantify – Smart Plant Monitoring & Automatic Watering",
     description:
-      "Eviasi is a vehicle service booking platform that makes it easy for customers to book car detailing, maintenance, and vehicle modification services. The application is designed to simplify service discovery, appointment scheduling, and access to automotive care solutions through a user-friendly interface.",
-    src: "eviasi.png",
-    link: "/src/assets/img/portfolio/eviasi.png",
-    color: "#ed649e",
+      "A smart plant monitoring mobile application integrated with IoT technology to monitor soil moisture and environmental conditions, automate watering schedules, and track plant growth through real-time sensor data.",
+    src: plantifyImage,
+    link: plantifyImage,
+    color: "#8FA66A",
+    githubLink: "https://github.com/akusuma11/plantify-mobile",
+    liveLink: "",
+    type: "image",
+  },
+  {
+    title: "UniEvent – Event Management System",
+    description:
+      "An event management platform designed to simplify event discovery, ticket reservations, and participant data management across Indonesia, particularly for events hosted at hotels and premium venues. UniEvent provides an intuitive experience for exploring events, booking tickets, and managing event operations.",
+    src: unieventImage,
+    link: unieventImage,
+    color: "#8C44E4",
+    githubLink: "https://github.com/akusuma11/unievent",
+    liveLink: "",
+    type: "image",
+  },
+  {
+    title: "Saranin.id – AI Product Recommendation",
+    description:
+      "An AI-powered supermarket product recommendation system that delivers personalized suggestions using shopping data and machine learning. The platform helps customers discover relevant products more efficiently while enabling retailers to understand shopping patterns through an integrated web application.",
+    src: "/videos/saranin.mp4",
+    link: "/videos/saranin.mp4",
+    color: "#FFE58A",
+    githubLink: "https://github.com/KlikSaran",
+    liveLink: "",
+    type: "video",
+  },
+  {
+    title: "Eviasi – Car Detailing & Modification Booking App",
+    description:
+      "A vehicle service booking application that simplifies car detailing, maintenance, and modification reservations. Eviasi enables customers to explore automotive services, schedule appointments, and discover vehicle care solutions through an intuitive, user-friendly interface.",
+    src: eviasiImage,
+    link: eviasiImage,
+    color: "#ED649E",
     githubLink: "https://github.com/akusuma11/eviasi",
     liveLink: "",
+    type: "image",
   },
 ];
 
