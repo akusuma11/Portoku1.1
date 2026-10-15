@@ -1,193 +1,250 @@
-# Portfolio Website
+# Andhung Gusti — Portfolio Website
+
 <div align="center">
-  <pre>
-    _____           _    __      _ _       
-   |  __ \         | |  / _|    | (_)      
-   | |__) |__  _ __| |_| |_ ___ | |_  ___  
-   |  ___/ _ \| '__| __|  _/ _ \| | |/ _ \ 
-   | |  | (_) | |  | |_| || (_) | | | (_) |
-   |_|   \___/|_|   \__|_| \___/|_|_|\___/ 
-  </pre>
+
+  <h3>Web Developer | UI/UX Designer | Technology Enthusiast</h3>
+
+  Personal portfolio website showcasing my skills, experience, certifications, and projects in web development and UI/UX design.
+
 </div>
 
- 
-Welcome to my **portfolio website**! This site showcases my skills, experience, education, projects, and how to get in touch with me. It's built with **React** and **Vite** for a fast, modern web experience. You can explore my work, learn about my journey, and contact me directly.
+---
+
+## 📸 Portfolio Preview
+
+<div align="center">
+
+  ![Portfolio Preview](./src/assets/images/portfolio-preview.png)
+
+</div>
 
 ---
 
-## Demo
+## 🌐 Live Preview
 
-![Portfolio Demo](https://i.postimg.cc/Dfr5jCQp/Screenshot-2025-01-02-120901.png)
+- **Portfolio:** Add your deployed portfolio URL
+- **GitHub:** [akusuma11](https://github.com/akusuma11)
+- **LinkedIn:** [Andhung Gusti](https://linkedin.com/in/andhung-gusti-92916b296/)
 
 ---
 
-## Live Preview
+## 👨‍💻 About Me
 
-Check out the live preview of the portfolio website here:  
-[**Live Demo**](https://codervai.vercel.app/)
----
-### 🎯 Project Structure
-```bash
-portfolio/
-├── node_modules/
-├── public/
-├── src/
-│   ├── assets/
-│   │   ├── css/
-│   │   │   ├── index.css
-│   │   │   └── tomorrow.css
-│   │   └── images/
-│   ├── components/
-│   │   ├── ui/
-│   │   │   ├── Reusable Components/
-│   │   │   │   ├── badge.jsx
-│   │   │   │   ├── button.jsx
-│   │   │   │   ├── card.jsx
-│   │   │   │   ├── EducationLoader.jsx
-│   │   │   │   ├── evervault-card.jsx
-│   │   │   │   ├── flip-words.jsx
-│   │   │   │   ├── icon-cloud.jsx
-│   │   │   │   ├── meteors.jsx
-│   │   │   │   ├── sparkles-text.jsx
-│   │   │   │   └── tooltip.jsx
-│   │   │   │
-│   │   │   ├── Main Components/
-│   │   │   │   ├── AnimatedGrid.jsx
-│   │   │   │   ├── Contact.jsx
-│   │   │   │   ├── Education.jsx
-│   │   │   │   ├── enhanced-portfolio-card.jsx
-│   │   │   │   ├── Experience.jsx
-│   │   │   │   ├── global.jsx
-│   │   │   │   ├── Header.jsx
-│   │   │   │   ├── Hero.jsx
-│   │   │   │   ├── Home.jsx
-│   │   │   │   ├── PortfolioPage.jsx
-│   │   │   │   ├── Projects.jsx
-│   │   │   │   └── Skills.jsx
-│   │   └── lib/
-│   │       └── utils.js
-│   ├── pages/
-│   │   ├── About/
-│   │   │   └── About.jsx
-│   │   ├── Contact/
-│   │   │   └── Contact.jsx
-│   │   ├── Experience/
-│   │   │   └── Experience.jsx
-│   │   ├── Header/
-│   │   │   └── Header.jsx
-│   │   ├── Hero/
-│   │   │   └── Hero.jsx
-│   │   ├── Projects/
-│   │   │   ├── Projects.jsx
-│   │   │   └── testProjects.jsx
-│   │   └── Skills/
-│   │       └── Skills.jsx
-│   ├── App.jsx
-│   └── main.jsx
-├── Configuration Files/
-│   ├── .eslintrc.js
-│   ├── .gitignore
-│   ├── components.json
-│   ├── index.html
-│   ├── jsconfig.json
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.js
-│   ├── README.md
-│   ├── tailwind.config.js
-│   ├── vercel.json
-│   └── vite.config.js
+Hello! I'm **Andhung Gusti**, a Web Developer with an interest in building modern, responsive, and user-friendly digital experiences.
 
-```
+I focus on web development and UI/UX design, combining functionality, performance, and clean interface design to create effective digital solutions.
+
+This portfolio showcases my technical skills, experience, certifications, and selected projects.
+
 ---
 
-## Sections of the Portfolio
+## 🎯 Portfolio Sections
 
-The portfolio website consists of the following sections:
+- **Home:** Personal introduction and professional profile.
+- **Skills:** Technical skills, programming languages, frameworks, and development tools.
+- **Experience:** Internship experience and practical project contributions.
+- **Education & Certifications:** Educational background and professional certifications.
+- **Projects:** Selected web development, mobile application, and UI/UX projects.
+- **Contact:** Contact information and professional networking links.
 
-- **Home**: Introduction and a brief overview.
-- **Skills**: A detailed list of my technical skills.
-- **Experience**: My professional journey and work experience.
-- **Education**: Academic background and certifications.
-- **Projects**: A showcase of the projects I've worked on.
-- **Contact**: Information on how to reach out to me.
+---
+
+## 🛠️ Technologies & Skills
+
+### Programming Languages
+- HTML
+- CSS
+- JavaScript
+- PHP
+
+### Frameworks & Development
+- React.js
+- Vue.js
+- Laravel
+- Flutter
+
+### Database
+- MySQL
+
+### UI/UX Design
+- Figma
+- Wireframing
+- Prototyping
+- Responsive Interface Design
+
+### Tools
+- Git
+- GitHub
+- Visual Studio Code
+
+---
+
+## 🚀 Featured Projects
+
+### 1. UniEvent — Event Booking Platform
+
+A web-based event management and ticket booking platform that supports event publication, participant registration, ticket reservations, and event administration for events across Indonesia.
+
+**Focus:** Web Development, UI/UX Design, Event Management.
+
+### 2. Plantify
+
+A digital project related to plants, focusing on usability, interface design, and functionality.
+
+**Focus:** Web Development, UI/UX Design.
+
+### 3. Eviasi — Automotive Service Booking Application
+
+An application concept for booking car detailing and vehicle customization services, helping users explore services and manage their vehicle care needs.
+
+**Focus:** Application Development, UI/UX Design.
+
+### 4. Epic Story Mobile
+
+A mobile learning application designed to support elementary school students through interactive learning materials, books, and flashcards.
+
+**Focus:** Flutter, Mobile UI/UX Design.
+
+### 5. Apotek Sehat
+
+A web development project related to pharmacy services and information management.
+
+**Repository:** [View on GitHub](https://github.com/akusuma11/Apotek-Sehat)
+
+---
+
+## 💼 Experience
+
+### UI/UX Design Internship — PT Pyxis Ultimate Solution
+
+**Period:** July – November 2025
+
+Worked on the UI/UX design of UniEvent, a web-based event ticket booking platform for hotel events.
+
+Responsibilities:
+- Designed website interfaces and user flows in Figma.
+- Created wireframes and interactive prototypes.
+- Refined interface layouts based on evaluation and feedback.
+- Collaborated with team members throughout the design process.
+
+---
+
+## 🎓 Education & Certifications
+
+My educational background and certifications support my development skills and commitment to continuous learning.
+
+### Certifications
+- BNSP — Web Developer
+- DBS Coding Camp / Dicoding — Relevant completed courses and certifications.
 
 ---
 
 ## 💻 Technologies Used
-- **Frontend:** React.js with Vite
+
+- **Frontend:** React.js, Vite
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
-- **Icons:** React Icons
+- **Icons:** Lucide React / React Icons
+- **Development Tools:** Git, GitHub, Visual Studio Code
 - **Deployment:** Vercel
 
 ---
 
-## Installation ⬇️
+## 📂 Project Structure
 
-You will need to download **Git** and **Node** to run this project.
-
-### Git
-
-- Download and install Git from the official website: [Git Downloads](https://git-scm.com/)
-- Verify the installation:
-  ```bash
-  git --version
-  ```
-
-### Node
-
-- Download and install Node.js from the official website: [Node.js Downloads](https://nodejs.org/)
-- Make sure you have the latest version of both Git and Node on your computer.
-- Verify the installation:
-  ```bash
-  node --version
-  ```
-
-# Getting Started 🎯
-
-### Fork and Clone the Repository 🚀
-1. Click the **Fork** button at the top-right corner of the page to create your own copy of the repository.
-2. After forking, open your terminal and run the following commands to clone the repo:
-
-  ```bash
-  git clone https://github.com/seraprogrammer/portfolio.git
-  ```
-Navigate to the Project Directory 📂
-Once the repository is cloned, change your directory to the project folder:
-```bash
-cd portfolio
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   └── images/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
-Install Dependencies ⚙️
-From the root directory of your project, install the necessary packages:
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+
+Verify the installation:
+
+```bash
+node --version
+npm --version
+git --version
+```
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/akusuma11/portfolioku.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd portfolioku
+```
+
+### 3. Install Dependencies
+
 ```bash
 npm install
 ```
 
-Run the Development Server 🚀
-Start the development server to see your project live:
+### 4. Start the Development Server
+
 ```bash
 npm run dev
 ```
 
-View the Project 🌐
-Open your browser and visit http://localhost:5173/ to see the result! 🎉
+### 5. Open the Website
 
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Visit the local URL displayed in your terminal, usually:
 
----
-
-### 🤝 Contributing
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+```text
+http://localhost:5173/
+```
 
 ---
 
-<div align="center"> Made with ❤️ by Nazmul Hossain </div>
+## 🚀 Deployment
 
+This portfolio can be deployed using [Vercel](https://vercel.com/).
+
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Set the build command to `npm run build`.
+4. Set the output directory to `dist`.
+5. Deploy the project.
+
+---
+
+## 📬 Contact
+
+- **GitHub:** [akusuma11](https://github.com/akusuma11)
+- **LinkedIn:** [Andhung Gusti](https://linkedin.com/in/andhung-gusti-92916b296/)
+
+For professional opportunities, web development projects, and collaboration, feel free to connect with me.
+
+---
+
+<div align="center">
+
+  **Designed and developed by Andhung Gusti**
+
+  *Building useful digital experiences through web development and thoughtful design.*
+
+</div>
