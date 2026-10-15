@@ -14,7 +14,7 @@
 
 <div align="center">
 
-  ![Portfolio Preview](./src/assets/images/portfolio-preview.png)
+  ![Portfolio Preview](./src/assets/images/porto.png)
 
 </div>
 
