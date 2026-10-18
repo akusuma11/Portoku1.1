@@ -2,10 +2,12 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+
 import saraninVideo from "@/assets/img/portfolio/saranin.mp4";
-import eviasiImage from "../assets/img/portfolio/eviasi.png";
-import plantifyImage from "../assets/img/portfolio/plantify.png";
-import unieventImage from "../assets/img/portfolio/unievent.png";
+import eviasiImage from "@/assets/img/portfolio/eviasi.png";
+import plantifyImage from "@/assets/img/portfolio/plantify.png";
+import unieventImage from "@/assets/img/portfolio/unievent.png";
+
 
 const projects = [
   {
@@ -13,7 +15,6 @@ const projects = [
     description:
       "A smart plant monitoring mobile application integrated with IoT technology to monitor soil moisture and environmental conditions, automate watering schedules, and track plant growth through real-time sensor data.",
     src: plantifyImage,
-    link: plantifyImage,
     color: "#8FA66A",
     githubLink: "https://github.com/akusuma11/plantify-mobile",
     liveLink: "",
@@ -22,9 +23,8 @@ const projects = [
   {
     title: "UniEvent – Event Management System",
     description:
-      "An event management platform designed to simplify event discovery, ticket reservations, and participant data management across Indonesia, particularly for events hosted at hotels and premium venues. UniEvent provides an intuitive experience for exploring events, booking tickets, and managing event operations.",
+      "An event management platform designed to simplify event discovery, ticket reservations, and participant data management across Indonesia, particularly for events hosted at hotels and premium venues.",
     src: unieventImage,
-    link: unieventImage,
     color: "#8C44E4",
     githubLink: "https://github.com/akusuma11/unievent",
     liveLink: "",
@@ -34,8 +34,7 @@ const projects = [
     title: "Saranin.id – AI Product Recommendation",
     description:
       "An AI-powered supermarket product recommendation system that delivers personalized suggestions using shopping data and machine learning. The platform helps customers discover relevant products more efficiently while enabling retailers to understand shopping patterns through an integrated web application.",
-    src: "/videos/saranin.mp4",
-    link: "/videos/saranin.mp4",
+    src: saraninVideo,
     color: "#FFE58A",
     githubLink: "https://github.com/KlikSaran",
     liveLink: "",
@@ -44,9 +43,8 @@ const projects = [
   {
     title: "Eviasi – Car Detailing & Modification Booking App",
     description:
-      "A vehicle service booking application that simplifies car detailing, maintenance, and modification reservations. Eviasi enables customers to explore automotive services, schedule appointments, and discover vehicle care solutions through an intuitive, user-friendly interface.",
+      "A vehicle service booking application that simplifies car detailing, maintenance, and modification reservations. Eviasi enables customers to explore automotive services, schedule appointments, and discover vehicle care solutions through an intuitive interface.",
     src: eviasiImage,
-    link: eviasiImage,
     color: "#ED649E",
     githubLink: "https://github.com/akusuma11/eviasi",
     liveLink: "",
@@ -113,18 +111,19 @@ export default function Projects() {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (
               <Card
-                key={`p_${i}`}
-                i={i}
-                url={project.link}
-                title={project.title}
-                color={project.color}
-                description={project.description}
-                progress={scrollYProgress}
-                range={[i * 0.25, 1]}
-                targetScale={targetScale}
-                githubLink={project.githubLink}
-                liveLink={project.liveLink}
-              />
+  key={project.title}
+  i={i}
+  url={project.src}
+  type={project.type}
+  title={project.title}
+  color={project.color}
+  description={project.description}
+  progress={scrollYProgress}
+  range={[i * 0.25, 1]}
+  targetScale={targetScale}
+  githubLink={project.githubLink}
+  liveLink={project.liveLink}
+/>
             );
           })}
         </section>
@@ -138,6 +137,7 @@ function Card({
   title,
   description,
   url,
+  type,
   color,
   progress,
   range,
@@ -149,66 +149,56 @@ function Card({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div
-      ref={container}
-      className="h-screen flex items-center justify-center sticky top-0 project-container"
-    >
-      <motion.div
-        style={{
-          scale,
-          top: `calc(-5vh + ${i * 25}px)`,
-          transform: `scale(var(--project-scale, 1))`,
-          marginTop: "var(--project-margin, 0)",
-        }}
-        className="relative -top-[25%] h-auto w-[90%] md:w-[85%] lg:w-[75%] xl:w-[65%] origin-top project-card"
-        whileHover={{
-          y: -8,
-          transition: { duration: 0.3 },
-        }}
-      >
-        {/* Modern split card design */}
-        <div className="w-full flex flex-col md:flex-row bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
-          
-{/* Image / Video section - full width on mobile, 55% on desktop */}
-<div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
-
-  {url?.toLowerCase().split("?")[0].endsWith(".mp4") ? (
+   
+<div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden bg-zinc-800">
+  {type === "video" ? (
     <motion.video
+      key={url}
       src={url}
       className="w-full h-full object-cover"
       autoPlay
       muted
       loop
       playsInline
+      preload="metadata"
       initial={{ scale: 1 }}
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.4 }}
-    />
+    >
+      Your browser does not support HTML video.
+    </motion.video>
   ) : (
     <motion.img
+      key={url}
       src={url}
       alt={title}
       className="w-full h-full object-cover"
+      loading="lazy"
+      decoding="async"
       initial={{ scale: 1 }}
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.4 }}
+      onError={(event) => {
+        console.error("Gagal memuat gambar:", url);
+        event.currentTarget.style.visibility = "hidden";
+      }}
     />
   )}
 
-  {/* Colored overlay on hover */}
   <motion.div
     className="absolute inset-0 pointer-events-none"
-    style={{ backgroundColor: color, mixBlendMode: "overlay" }}
+    style={{
+      backgroundColor: color,
+      mixBlendMode: "overlay",
+    }}
     initial={{ opacity: 0 }}
     whileHover={{ opacity: 0.3 }}
     transition={{ duration: 0.3 }}
   />
 
-  {/* Project number */}
   <div className="absolute top-4 left-4 md:top-6 md:left-6 bg-black/50 backdrop-blur-md text-white px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium">
     Project {i + 1}
   </div>
-
 </div>
 
           {/* Content section - full width on mobile, 45% on desktop */}
@@ -306,6 +296,7 @@ function Card({
 
 // Add PropTypes validation
 Card.propTypes = {
+  type: PropTypes.oneOf(["image", "video"]).isRequired,
   i: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
